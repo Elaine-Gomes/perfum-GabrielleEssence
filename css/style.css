@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500&family=Edu+NSW+ACT+Foundation:wght@400;500&family=Ibarra+Real+Nova:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Montserrat:wght@500;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400&family=Righteous&family=Roboto+Condensed:ital,wght@0,300;0,700;1,300;1,400&family=Sarala&family=Tapestry&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500&family=Edu+NSW+ACT+Foundation:wght@400;500&family=Fraunces:opsz,wght@9..144,700&family=Ibarra+Real+Nova:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Montserrat:wght@500;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400&family=Righteous&family=Roboto+Condensed:ital,wght@0,300;0,700;1,300;1,400&family=Sarala&family=Tapestry&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    /*colors*/
+    --primary-colorOne: hsl(158, 36%, 37%);
+    --primary-colorTwo: hsl(30, 38%, 92%);
+    --neutral-color-darkBlue: hsl(212, 21%, 14%);
+    --neutral-color-grayishBlue: hsl(228, 12%, 48%);
+    --neutral-color-White: hsl(0, 0%, 100%);
+
+    /*Fonts*/
+    --FamilyOne:'Montserrat', sans-serif;/*- Weights: 500, 700*/
+    --FamilyTwo:'Fraunces', serif;/*-- Weights: 700/*/
+}
+body{
+    background-color:var(--primary-colorTwo);
+    width: 1440px;
+    height: 100vh;
+    overflow: hidden;
+}
+
+main{
+    width:42%;
+    height: 400px;
+    background-color: var(--neutral-color-White);
+    border-radius:10px 10px 10px 10px ;
+    margin:0 auto;
+    margin-top: 130px;
+}
+.image img{
+    height: 400px;
+    width:300px ;
+    float: left;
+    border-radius:10px 0 0 10px ;
+}
+.information{
+    display: flex;
+    flex-direction: column;
+    width:50%;
+    padding: 30px;
+    float:right; 
+}
+h4{
+    font-family:var(--FamilyOne);
+    text-transform: uppercase ;
+    font-weight: 100;
+    font-size: 8px;
+    letter-spacing: 0.5em;
+    color:var(--neutral-color-grayishBlue) ;
+}
+p,h4{
+    padding: 0 0 0 10px;
+}
+
+h1{
+   font-family:var(--FamilyTwo);
+   padding: 10px;
+   width: 200px;
+}
+#prices{
+    display: flex;
+    padding: 10px;
+}
+#currentPrice{
+    font-size: 20px;
+    font-family: var(--FamilyTwo);
+    color:var(--primary-colorOne) ;
+}
+#previousPrices{
+    font-size: 10px;
+    text-decoration:line-through;
+    color: var(--neutral-color-grayishBlue);
+    padding: 8px 0 0 12px;
+    
+}
+p#text{
+    font-family: var(--FamilyOne);
+    width: 210px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-size: 12px;
+    color: var(--neutral-color-grayishBlue);
+    letter-spacing: 0.1em;
+}
+
+#btnAddCard{
+    width: 210px;
+    padding: 12px;
+    border-radius: 5px;
+    text-align: center;
+    border: none;
+    background-color: var(--primary-colorOne);
+    color: var(--neutral-color-White);
+    font-family:var(--FamilyOne);
+    font-weight: 500;
+    font-size: 12px;
+    margin:20px 0 0 10px; 
+}
+
+#btnAddCard img{
+    width:10px;
+}
