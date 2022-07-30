@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 <link rel="stylesheet" href="./css/style.css">
+<link rel="stylesheet" href="./css/responsive.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Product preview card component</title>
@@ -19,7 +20,11 @@
         <main>
             <section>
                   <div class="image">
-                      <img src="./images/image-product-desktop.jpg" alt="">
+                    <picture>
+                       <source media="(max-width:559px )" srcset="./images/image-product-mobile.jpg">
+                         <img id="img"src="./images/image-product-desktop.jpg" alt="">
+                    </picture>
+                    
                    </div>
 
                    <div class="information">
@@ -38,8 +43,8 @@
                             
                           <div id="prices">
                                 <span id="currentPrice">$149.99</span>
-                                <span id="previousPrices">$169.99</span>
-                           </div>
+                                <span id="previouPrice">$169.99</span>
+                          </div>
 
                            <button  id="btnAddCard"><img src="./images/icon-cart.svg" alt=""> Add to Cart</button>
                   </div>
