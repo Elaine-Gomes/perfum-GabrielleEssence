@@ -21,7 +21,7 @@ body{
     background-color:var(--primary-colorTwo);
     max-width:1440px;
     height: 100vh;
-    overflow: hidden;
+    overflow: scroll;
     padding: 100px 0 0 0 ;
 }
 
